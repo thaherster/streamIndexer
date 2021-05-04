@@ -1,0 +1,16 @@
+schema {
+    query : Query
+}
+
+
+type Query {
+    allTickets : [Ticket]
+    ticket(id : String) : Ticket
+}
+
+
+type  Ticket {
+    id : String
+    amount : Float
+    category :  String
+}

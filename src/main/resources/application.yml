@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    password: innerpeace
+    url: jdbc:mysql://localhost:3306/ticket
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: sankhya
